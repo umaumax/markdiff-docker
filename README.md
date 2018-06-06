@@ -1,13 +1,13 @@
 # markdiff
 
-[netj/markdown\-diff: Markdown\-Diff formats diff of Markdown documents in Markdown]( https://github.com/netj/markdown-diff )
-[r7kamura/markdiff: Rendered Markdown differ\.]( https://github.com/r7kamura/markdiff/ )
+* [netj/markdown\-diff: Markdown\-Diff formats diff of Markdown documents in Markdown]( https://github.com/netj/markdown-diff )
+* [r7kamura/markdiff: Rendered Markdown differ\.]( https://github.com/r7kamura/markdiff/ )
 
 ## Preparation
 ```
 docker build -t markdiff-image .
 mkdir docker-ws
-cp -r docker-init docker-ws
+cp -r docker-init/* docker-ws/
 docker run -i -t --rm --privileged -v $PWD/docker-ws:/root --workdir=/root markdiff-image /bin/bash
 ```
 
